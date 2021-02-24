@@ -1,0 +1,51 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  install:
+    commands:
+      - apt-get update -y
+      - pip install --upgrade awscli
+      # - command
+    #finally:
+      # - command
+      # - command
+  pre_build:
+    commands:
+      - $(aws ecr get-login --no-include-email --region ap-southeast-1)
+      # - command
+    #finally:
+      # - command
+      # - command
+  build:
+    commands:
+      - docker build -t janio-shipper .
+      - docker tag janio-shipper:latest 491220782942.dkr.ecr.ap-southeast-1.amazonaws.com/janio-shipper:latest
+    #finally:
+      # - command
+      # - command
+  post_build:
+    commands:
+      - docker push 491220782942.dkr.ecr.ap-southeast-1.amazonaws.com/janio-shipper:latest
+      - zip -r deploy.zip ./*
+    #finally:
+      # - command
+      # - command
+artifacts:
+  files:
+    - deploy.zip
+    # - location
+    # - name
+  #discard-paths: yes
+  #base-directory: location
+#cache:
+  #paths:
+    # - path
+    # - path

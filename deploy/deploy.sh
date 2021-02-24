@@ -1,0 +1,5 @@
+ssh $1 "mkdir -p /home/centos/janio-shipper/build1 && mkdir -p /home/centos/janio-shipper/build"
+ssh $1 "cd /home/centos/janio-shipper/build1 && tar -zxvf shipper-build.tar.gz && rm -rf .git/ .DS_Store"
+ssh $1 "cp -R /home/centos/janio-shipper/build1/* /home/centos/janio-shipper/build"
+ssh $1 "rm -rf /home/centos/janio-shipper/build/static && mv /home/centos/janio-shipper/build1/static /home/centos/janio-shipper/build"
+ssh $1 "cd /home/centos/janio-shipper/build && rm -rf shipper-build.tar.gz && rm -rf /home/centos/janio-shipper/build1"

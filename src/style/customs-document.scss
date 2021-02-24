@@ -1,0 +1,371 @@
+/* purgecss start ignore */
+.customs-document-container {
+  background-color: #F0F3F7;
+  height: 100%;
+
+  hr {
+    margin: 24px 0;
+  }
+
+  .ant-btn:not([disabled]):not(.ant-btn-link) {
+    background-color: #050593 !important;
+  }
+  .ant-btn-link span {
+    font-size: 14px !important;
+  }
+
+  .has-error .ant-upload {
+    border-color: #dc3545;
+  }
+  .ant-upload.ant-upload-drag {
+    overflow: hidden;
+  }
+
+  header {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    position: relative;
+    z-index: 10;
+    max-width: 100%;
+    background: #fff;
+    -webkit-box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.102);
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.102);
+    img {
+      height: 40px;
+      width: 84px;
+    }
+  }
+
+  footer {
+    background-color: #050593;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+
+    p {
+      margin-bottom: 0;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #FFFFFF;
+      a {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  .success-documents {
+    padding-top: 46px;
+
+    .ant-card-bordered {
+      width: 416px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      height: 434px;
+      border-radius: 5px;
+      margin: 0 auto;
+    }
+
+    .success-message {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      color: #050593;
+    }
+
+    .description {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #595959;
+
+      a {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #050593;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.enter-tracking-no {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+
+  .card-container {
+    width: 416px;
+    min-height: 412px;
+    align-self: baseline;
+    border-radius: 5px;
+    @media screen and (max-width: 768px) {
+      border: none;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-bottom: 24px;
+      max-width: 100%;
+      width: 100%;
+
+      .logo-image {
+        max-width: 182px;
+        width: 100%;
+        margin-top: 6px;
+        margin-bottom: 24px;
+      }
+
+      .logo-title {
+        color: #050593;
+        font-weight: bold;
+        text-align: center;
+        font-family: Lato;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 0 !important;
+        @media screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .tracking-number {
+    .ant-form-item-label {
+      label {
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 19px;
+        color: #595959;
+      }
+    }
+    .ant-form-item-control-wrapper {
+      .has-error {
+        .ant-form-explain {
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+
+  .need-help {
+    margin-top: 24px;
+    margin-bottom: 3px;
+    text-align: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    a {
+      //font-size: 14px;
+      font-size: 16px;
+      color: #050593;
+    }
+  }
+}
+
+.upload-documents {
+  margin: 0 24.7%;
+  @media screen and (max-width: 768px) {
+    margin: 0 4%;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1252px) {
+    margin: 0 17.7%;
+  }
+  &.ant-layout-content {
+    padding-top: 24px;
+    padding-bottom: 101px;
+  }
+  .upload-documents-title {
+    padding: 0 8px;
+    h2 {
+      color: #050593;
+      font-weight: bold;
+      margin-bottom: 8px;
+      font-family: Lato;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 29px;
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+    p {
+      font-size: 16px;
+      color:#707070;
+      line-height: 19px;
+      margin-bottom: 0;
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .document-item {
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 992px) {
+      .upload-cards-wrapper {
+        & > div:nth-child(2) {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    &.upload-cards {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+
+      .document-item-title-container {
+        .document-item-help {
+          font-weight: normal;
+          color: #707070;
+          margin-top: 4px;
+        }
+
+        .flex-between {
+          .document-item-title {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            color: #595959;
+          }
+        }
+      }
+    }
+    .document-item-help {
+      font-weight: normal;
+      color: #707070;
+      margin-top: 4px;
+    }
+    .document-item-file {
+      margin-top: 8px;
+
+      .ant-upload {
+        .ant-upload-btn {
+          padding: 23px 25px;
+          background-color: #FBFBFB;
+          .ant-upload-drag-container {
+            .ant-upload-text {
+              margin-bottom: 11px !important;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              & > p:nth-child(2) {
+                margin-left: 7px;
+                font-size: 16px;
+                color: #595959;
+                @media screen and (max-width: 768px) {
+                  font-size: 13px;
+                }
+              }
+              span {
+                font-size: 16px;
+                color: #1890ff;
+                @media screen and (max-width: 768px) {
+                  font-size: 13px;
+                }
+              }
+              & > p:nth-child(4) {
+                font-size: 16px;
+                color: #595959;
+                @media screen and (max-width: 768px) {
+                  font-size: 13px;
+                }
+              }
+            }
+            .ant-upload-hint {
+              font-family: Lato;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px !important;
+              line-height: 18px;
+              color: #707070;
+              @media screen and (max-width: 768px) {
+                font-size: 10px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    h2 {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      color: #050593;
+      @media screen and (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+    p {
+      font-family: Lato;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 0;
+    }
+    .document-item-title {
+      font-weight: bold;
+      color: #595959;
+    }
+  }
+}
+/* purgecss end ignore */
+
+.recaptcha-wrapper {
+  div, iframe {
+    //width: 100% !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.ant-modal-header {
+    padding: 16px 4px !important;
+    margin: 0px 25px;
+  div {
+    font-weight: bold;
+    font-size: 17px;
+    color: #464646;
+  }
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #050593 !important;
+    border-color: #050593 !important;
+}
+
+
+.ant-modal-close>span>i>svg {
+  font-size: 20px;
+  color: '#000'
+}

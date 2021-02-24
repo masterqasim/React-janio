@@ -1,0 +1,36 @@
+.top-container {
+  background: linear-gradient(175deg, #000000 0%, #273272 74%) !important;
+}
+
+.logo-container {
+  width: 250px;
+  max-width: 80%;
+}
+
+.content-container {
+  width: 550px;
+  max-width: 96vw;
+  border-radius: 10px;
+  box-shadow: 0px 3px 16px #DCDCDC;
+}
+
+.login-image {
+  position: absolute;
+  bottom: 0
+}
+
+.divider {
+  width: 0;
+  border-top: 6vh solid #273272;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-bottom: 0;
+  background: #fff;
+  background-color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+
+.btn-janio {
+  background: linear-gradient(170deg, #000084 0%, #000020 100%) !important;
+  border: 0px !important;
+}

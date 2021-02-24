@@ -1,0 +1,260 @@
+@import './login.scss';
+@import './customs-document.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+#root {
+  height: 100%;
+}
+
+.side-bar-font-size {
+  font-size: 1em;
+}
+
+.side-bar-selected-color {
+  background-color: #7f83a9;
+  color: white;
+}
+
+.jumbotron {
+  background-color: white !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.max-width-40 {
+  max-width: 40rem;
+}
+
+.max-width-70 {
+  max-width: 70rem;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.border-secondary {
+  border-color: #b9b9b9 !important;
+}
+
+.react-datepicker__time-box ul.react-datepicker__time-list {
+  padding: 0;
+}
+
+.dashboard-button {
+  height: 80px;
+  height: 80px;
+}
+
+.janio-colour {
+  color: #000058;
+}
+
+.center-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.select-error {
+  border-color: #dc3545;
+}
+
+.invalid-text {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545;
+}
+
+#navBarTitle span.h5 {
+  font-weight: bold !important;
+}
+
+.store-img-wrapper {
+  width: 500px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 15px;
+  background: #e4e4e4;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+
+.dotted-vr {
+  border: 0.5px dotted blue;
+  transform: rotate(90deg);
+  width: 65px;
+  margin: 13px 0px 17px -23px;
+  display: block;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ant-form-item-label {
+  line-height: 28px !important;
+  label {
+    font-size: 18px
+  }
+}
+.a contact-link {
+  text-decoration: underline;
+}
+
+.tick {
+	width: 100px; // use width: 64, height: 44 eventually
+  height: 60px;
+	position: absolute;
+	margin: auto;
+	top: 0; bottom: 0; left: 0; right: 0;
+    background: url(https://images2.imgbox.com/de/7c/pHHdRTWX_o.png) 
+				no-repeat 
+				left top / 2900%;
+    cursor: pointer;
+    
+    &.animate {
+        animation: tickPop 1s steps(28) infinite;
+    }
+}
+
+@keyframes tickPop {
+    from { background-position: left top; }
+	
+    to { background-position: right top; }
+}
+
+.upload-success-button {
+  width: 150px;
+  height: 55px;
+  background: #050593 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  margin-top: 10px;
+  opacity: 1;
+  color: #fff;
+}
+
+.mailtolink {
+  text-decoration: underline;
+  color: #0045FF;
+}
+
+/* purgecss start ignore */
+.ant-btn {
+  height: 48px !important;
+  span {
+    font-size: 18px !important;
+  }
+}
+
+.ant-upload-drag-container {
+  display: block !important;
+  width: 100%;
+  .ant-upload-text {
+    margin-bottom: 0 !important;
+  }
+  .ant-upload-hint {
+    font-size: 12px;
+  }
+}
+/* purgecss end ignore */
+
+.a contact-link {
+  text-decoration: underline;
+}
+
+.tick {
+	width: 100px; // use width: 64, height: 44 eventually
+  height: 60px;
+	position: absolute;
+	margin: auto;
+	top: 0; bottom: 0; left: 0; right: 0;
+    background: url(https://images2.imgbox.com/de/7c/pHHdRTWX_o.png) 
+				no-repeat 
+				left top / 2900%;
+    cursor: pointer;
+    
+    &.animate {
+        animation: tickPop 1s steps(28) forwards;
+    }
+}
+
+@keyframes tickPop {
+    from { background-position: left top; }
+	
+    to { background-position: right top; }
+}
+
+.upload-success-button {
+  width: 150px;
+  height: 55px;
+  background: #050593 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  margin-top: 10px;
+  opacity: 1;
+  color: #fff;
+}
+
+.mailtolink {
+  text-decoration: underline;
+  color: #0045FF;
+}
+
+
+.pickup-info-box {
+  background: #E0E0E0;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #4F4F4F;
+
+  p {
+    color: #4F4F4F;
+    line-height: 25px;
+  }
+
+  strong {
+    color: #4F4F4F;
+    line-height: 25px;
+  }
+}
+
+.submit-title {
+  font-family: Lato;
+  line-height: 19px;
+  color: #4F4F4F
+}
+
+/* purgecss start ignore */
+.ant-select-combobox .ant-select-search__field {
+  z-index: 0 !important;
+}
+
+.ant-select-auto-complete.ant-select .ant-input {
+  border: 0px !important
+}
+/* purgecss end ignore */
+
